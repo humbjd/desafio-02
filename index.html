@@ -35,9 +35,9 @@
             alert (`${nome}![PARABÉNS!] VOCÊ ACERTOU RESTANDO ${contador} TENTATIVAS.\nO NÚMERO SECRETO ERA ${numeroSecreto}.`)
         } else if (chute > numeroSecreto) {
             contador -= 1;
-            alert (`${nome}! [ERROU], O NÚMERO É MENOR!\nNÚMERO DE TENTATIVAS RESTANTES: ${contador -= 1}.`)
+            alert (`${nome}! [ERROU], O NÚMERO É MENOR!\nNÚMERO DE TENTATIVAS RESTANTES: ${contador - 1}.`)
         } else {
-            alert (`${nome}! [ERROU], O NÚMERO É MAIOR!\nNÚMERO DE TENTATIVAS RESTANTES: ${contador -= 1}.`)
+            alert (`${nome}! [ERROU], O NÚMERO É MAIOR!\nNÚMERO DE TENTATIVAS RESTANTES: ${contador - 1}.`)
             contador -= 1;
         } 
             if (contador == 0) {
